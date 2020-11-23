@@ -1,1 +1,1 @@
-# ui-design-coding-challenges
+# UI Design Challenges
