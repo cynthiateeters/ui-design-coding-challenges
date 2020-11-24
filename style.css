@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html,
 body {
   margin: 0;
@@ -7,22 +9,23 @@ body {
 }
 
 body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   height: 100vh;
-  font-family: 'Poppins';
-  grid-gap: 2em;
-  padding: 3em;
+  font-family: 'Open Sans', sans-serif;
   color: #454545;
 }
 
-footer {
-  padding: 2rem;
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 2em;
+  padding: 3em;
+  padding-bottom: 5em;
 }
 
 h1 {
   grid-column: 1/-1;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 0.1em;
   word-spacing: 0.3em;
 }
@@ -48,7 +51,32 @@ img {
   color: inherit;
 }
 
-/* .image-container {
-  height: 20rem;
-  border: 2px solid black;
-} */
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  color: #e2e2e2;
+  width: 100%;
+  z-index: 1;
+  font-size: 0.8em;
+}
+.title {
+  font-style: italic;
+}
+
+.url {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.2em;
+  background-color: #333;
+  color: inherit;
+  border-bottom: #e2e2e2 0.125em solid;
+}
+
+.svg {
+  width: 2rem;
+  vertical-align: sub;
+}
