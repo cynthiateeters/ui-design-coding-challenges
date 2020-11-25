@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-html,
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  height: 100vh;
   font-family: 'Open Sans', sans-serif;
+  font-size: clamp(1rem, 0.75rem + 0.8333vw, 1.5rem);
   color: #363636;
 }
 
@@ -35,7 +36,6 @@ h1 {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.1em;
   word-spacing: 0.3em;
-  margin: 0;
 }
 
 /* https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/ */
@@ -64,6 +64,7 @@ img {
 .card h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
+  margin: 0.5rem;
 }
 
 .card .description {
